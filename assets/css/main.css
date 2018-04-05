@@ -5,17 +5,42 @@ body{
 /*Container*/
 .container{
 	padding: 0 15px;
-/*	width:*/ 
+	margin: 0 auto;
 }
+
+.container--lg-width{
+	max-width: 1060px;
+}
+
+/*container end*/ 
+
+/*GENERAL STYLES*/
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+section.project, section.job{
+	padding: 60px 0;
+}
+.section-heading__title{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 
+	margin:0 0 30px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*GENERAL STYLES*/
+
+
 
 /*Header*/
 
 .nav{
 	background: white;
 }
-.nav ul{
-	list-style: none;
-}
+
 .nav__list{
   list-style: none;
   padding: 0;
@@ -29,12 +54,25 @@ body{
 .nav__list li{
  display: inline-block;
 }
+a.nav__link{
+	padding: 10px 0;
+}
 .nav__left{
   float: left;
 }
+.nav__brand{
+	padding: 10px 0;
+}
+.nav__brand img{
+	height: 10px;
+}
+
 .nav__right{
   float: right;
 
+}
+.nav__link{
+	display: block;
 }
 .nav__right .nav__link{
 	text-decoration: none;
@@ -42,22 +80,11 @@ body{
 	display: block;
 	padding: 43px 12px;
 }
-/*nav a.selected, nav a:hover{
-color: #32673f;
-}
-a {
-text-decoration: none;
-}
-a{
-transition: all 0.5s ease;
-font-size: 25px;
-font-weight: bold;
-}*/
-/*.nav__right .nav__link{
-	color: white; 
-}*/
+
 .nav__active .nav__link{
-	background-color: #EEE;
+	background-color: #bdc3cc;
+	color: #fff;
+	font-weight: 500;
 }
 /*Header*/
 
@@ -68,7 +95,9 @@ font-weight: bold;
 	height: 300px;
 	background-image:url(../../assets/img/banner.jpg);
 	background-size: cover;
-	padding-top:119px; 
+	padding-top:119px;
+	background-attachment: fixed;
+	background-position: bottom; 
 }
 .banner__details{
 	padding: 15px;
@@ -80,16 +109,11 @@ font-weight: bold;
 	font-weight: 900px;
 	font-size: 48px;
 	line-height: 32px;
+
+
 }
 
 /*BANNER*/
-section.project{
-	padding: 60px 0;
-}
-section.project .container{
-	margin:0 auto;
-	max-width:1060px;
-}
 .col-33{
 	width: 33%;
 }
@@ -97,13 +121,6 @@ section.project .container{
 
 
 	/*JOB SECTION*/
-	section.job{
-		padding: 60px 0;
-	}
-	section.job .container{
-		margin: 0 auto;
-		max-width: 1060px;
-	}
 
 	.job__textarea{
 		width: 100%;
@@ -129,17 +146,16 @@ section.project .container{
 
 
 	/*JOB SECTION*/
+
+
+
 	/*FOOTER SECTION*/
 
 	.footer{
 		background-color: #fff;
 		padding: 15px 0;
 	}
-	footer.footer .container{
-		margin: 0 auto;
-		max-width: 1060px;
-
-	}
+	
 
 	.footer__list{
 		padding: 0;
@@ -149,11 +165,7 @@ section.project .container{
 	.footer__list li{
 		display: inline-block;
 	}
-	.footer__list:after{
-		content: '';
-		display: table;
-		clear: both;
-	}
+	
 	.footer__right{
 		float: right;
 	}
@@ -202,7 +214,7 @@ section.project .container{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255,0,0,0.75);
+	background: rgba(219,149,97,0.75);
 	transition: all 0.5s ease;
 	padding-top:34px; 
 	transform: translateY(-100%);
@@ -217,9 +229,13 @@ section.project .container{
 }
 .card__icons{
 	font-size: 80px;
+	color: #fff;
+	font-weight: 600;
 }
 .card__links{
 	text-decoration: none;
+	color: #fff;
+	font-weight: 900;
 }
 .card:hover .card__overlay{
 	transform: translateY(0);

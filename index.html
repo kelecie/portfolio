@@ -9,11 +9,12 @@
 <body>
 	<header>
 		<nav  class="nav">
-			<div class="container">
-				<ul class="nav__list">
+			<div class="container container--lg-width" >
+				<ul class="nav__list clearfix">
 					<li class="nav__left">
-						<a href="index.html" class="nav__link"></a>
-						<img src="assets/img/logo.png" width="80px;" alt="logo">
+						<a href="index.html" class="nav__link nav__brand">
+						<img src="assets/img/logo.png" alt="logo">
+						</a>
 					</li>
 					<li class="nav__right">
 				  		<ul class="nav__list">
@@ -40,8 +41,12 @@
 	 </section>
 <!-- 	  project section -->
 	 <section class="project">
-	 	 <!-- Grid system starts here -->
-	 <div class="container"> 
+	 	 
+		<div class="container container--lg-width"> 
+			<div class="section-heading">
+				<h3 class="section-heading__title"> Projects</h3>
+			</div>
+			<!-- Grid system starts here -->
 	 	<div class="grid">
 	 		<div class="col-33 col-x">
 	 			<div class="card">
@@ -145,7 +150,10 @@
 	</section>
 	 
 		<section class="job">
-			<div class="container">
+			<div class="container container--lg-width">
+				<div class="section-heading">
+					<h3 class="section-heading__title"> Available for Job</h3>
+				</div>
 			 	<form action="#" class="job__form">
 			 		<div>
 			 			<textarea class="job__textarea"></textarea>
@@ -163,13 +171,13 @@
 	</main>
 
 	 <footer class="footer">
-	 	<div class="container">
+	 	<div class="container container--lg-width">
 		 	<div class="footer__wrap">
-		 		<ul class="footer__list">
+		 		<ul class="footer__list clearfix" >
 		 		 <li class="footer__left"> Copyright &copy; 2018 </li>
 		 		 <li class="footer__right">
 		 		 	<ul class="footer__list">
-		 		 		<li> Contact</li>
+		 		 		
 		 		 		<li>
 		 		 			<ul class="footer__list">
 		 		 				<li><a href="https://www.github.com/kelecie" class="footer__links">github<a/></li>
